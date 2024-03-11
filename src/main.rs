@@ -1,10 +1,11 @@
 use calculrs;
 use std::io;
+
 fn main() {
-    
+
     calculrs::calculrs_menu();
 
-    let mut op = String::new();
+    let mut op: String = String::new();
 
     println!("Enter your option: ");
 
@@ -12,5 +13,4 @@ fn main() {
         .read_line(&mut op)
         .expect("Failed to read line");
 
-    
 }
